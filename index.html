@@ -427,7 +427,7 @@
         <script>
           $(function () {
             function fetchData() {
-              var url = "http://localhost/data.json?" + new Date().getTime();
+              var url = "https://raw.githubusercontent.com/TreyKG/Kubot/main/data.json?" + new Date().getTime();
               $.getJSON(url, function (data) {
                 $.each(data, function (key, value) {
                   $('#' + key + '_price').text(value.price);
